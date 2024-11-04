@@ -21,7 +21,6 @@ def get_blockheight():
     data = '{"method": "getblockcount"}'
 
     try:
-        #response = requests.post('http://cdb6a6d960ede64a70243dea646e5b2a:8b4d6d63169d2ea96113c44d0d2d2dc4@localhost:20336/', headers=headers, data=data)
         response = requests.post(ELASTOS_ELA_URL, headers=headers, data=data, auth=(ELASTOS_ELA_USER, ELASTOS_ELA_PASS))
         response.raise_for_status()
         print(json.loads(response.text))
