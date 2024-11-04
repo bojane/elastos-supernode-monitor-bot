@@ -1,0 +1,18 @@
+# Config files
+telegram.ini
+config.py
+
+# Python
+__pycache__/
+*.pyc
+*.session
+
+# Generated files
+*.html
+*.csv
+*copy*
+
+# Environment
+.env
+.venv
+
